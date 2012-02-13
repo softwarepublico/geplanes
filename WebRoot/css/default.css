@@ -1,0 +1,266 @@
+BODY {
+	margin: 0px;
+	background-color: #EFEBE0;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 11px;
+	
+}
+
+img{border: none;}
+
+/* 
+ *  Tabela mais externa. Utilizada nas tags listagem, entrada, tela
+ */
+.outterTable {
+	border: 1px solid #336699;
+ 	width: 98%;
+ 	background-color:#F5F5F5;
+}
+
+.outterTableHeader{
+	color: #FFFFFF;
+	background-color: #002D59;
+	font-weight: bold;
+	font-size: 11px;
+	font-family:arial;
+	height: 16px;
+}
+
+.outterTableHeaderLeft{
+	float:left; 
+	padding-left: 10px;
+	text-transform: uppercase;	
+}
+.outterTableHeaderRight{
+	float:right;
+	padding-right: 5px;	
+}
+
+.outterTableHeaderLink {
+	color: #FFFFFF;	
+	font-family: tahoma;
+	text-decoration: none;
+}
+
+.outterTableHeaderLink:hover {
+	text-decoration: underline;
+}
+
+
+/*
+ * Janela. Utilizando em JanelaFiltro, JanelaResultados, JanelaEntrada
+ */
+.window {
+	width: 100%;
+	background-color: #e5e8eb;
+	padding: 4px;
+}
+.window TD, INPUT, SELECT, BUTTON {
+	font-family: tahoma;
+	font-size:   11px;
+}
+.window BUTTON {
+	border: 2px #022D5A solid;
+	background-color: #FFFFFF;
+}
+
+.inputWindow {
+}
+
+.resultWindow {
+	background-color: white;
+	padding: 0px;
+}
+
+/*
+ * Utilizados em PanelGrids que s�o tabelas de entrada de dados.
+ */
+.inputTable {
+	padding: 1px 3px;
+}
+
+.propertyColumn {
+	text-align: left;
+	padding-right: 70px;
+	font-size:10px;
+}
+ 
+.labelColumn {
+	white-space: nowrap;
+	width: 1%;
+	padding-right: 20px;
+	padding-left: 3px;
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 10px;
+}
+
+/*
+.labelColumn SPAN{
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 10px;
+}
+*/
+
+.actionBar {
+	padding: 3px;
+}
+
+
+/**
+ * Estilo padr�o para o dataGrid
+ */ 
+.dataGrid {
+	font-family: tahoma;
+	font-size: 11px;	
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.dataGridHeader {
+	background-color: #507D9E;
+	color: #FFFFFF;
+	font-family: Verdana;
+	font-weight: bold;	
+	text-align: left;
+	text-transform:uppercase;
+}
+
+.dataGridHeader A{
+	color: #FFFFFF;
+	font-family: Verdana;
+}
+.dataGridHeader TD{
+	color: #FFFFFF;
+	font-family: Verdana;
+}
+
+.dataGridBody1 {
+	background-color:  #f5f7f8;	
+}
+.dataGridBody2 {
+	background-color: #edeff0;	
+}
+.dataGridFooter {
+}
+
+
+/**
+ * Estilo padr�o de link
+ */
+A {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+A:hover {
+	text-decoration: underline;
+}
+
+
+/**
+ * Estilos das abas
+ */
+.tabPanelLink {
+	width: 100%;
+	padding:4px;	
+	margin-top:3px;	
+	margin-bottom: 20px;
+	font-size: 11px;
+	border-bottom:1px solid white;
+} 
+ 
+.detailTabSelected {
+	padding-top: 3px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 19px;
+	line-height: 15px;
+	vertical-align: middle;
+	border-left: 1px solid #91A7B4;
+	border-right: 1px solid #91A7B4;
+	border-top: 2px solid orange;
+	background-color: #C0C0C0;
+	border-bottom: 0px solid gray;
+}
+
+
+.detailTabSelected:active {
+	text-decoration: none;
+}
+.detailTabSelected:hover {
+	text-decoration: none;
+}
+
+
+.detailTabUnselected {
+	padding-top: 3px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 16px;
+	line-height: 16px;
+	vertical-align: middle;
+	border-left: 1px solid #91A7B4;
+	border-right: 1px solid #91A7B4;
+	border-top: 1px solid #91A7B4;
+	background-color: #F1F1F1;
+	border-bottom: 0px solid red;
+}
+
+.detailTabUnselected:hover {
+	padding-top: 2px;
+	text-decoration: none;
+	border-top: 2px solid orange;
+	background-color: #F9F8FE;
+}
+.detailTabUnselected:active {
+	text-decoration: none;
+}
+
+/**
+ * Detalhe
+ */
+.detailBlock {
+	background-color: white;
+}
+
+.selectedRow {
+	background-color: #BEECBB;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.mouseOnRow {
+	background-color: #DEF4DD;
+}
+
+.required {
+	background-color: #fff9d0;
+}
+
+.requiredMark{
+	color: #000000;	
+}
+
+.listagemHeader {
+	font-family: verdana, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #507D9E;
+	color: #FFFFFF;
+}
+
+.listagemBody1 {
+	font-family: verdana;
+	font-size: 10px;
+	background-color: #E5E5E5;
+}
+
+.listagemBody2 {
+	font-family: verdana;
+	font-size: 10px;
+	background-color: #F5F5F5;
+}

@@ -1,0 +1,231 @@
+/* ThemeOfficeMenu Style Sheet */
+
+.ThemeOfficeMenu,.ThemeOfficeSubMenuTable
+{
+	font-size: 12px;
+	padding: 0;
+	white-space: nowrap;
+	cursor: default;
+	height: 25px;
+}
+
+.ThemeOfficeSubMenu
+{
+	position: absolute;
+	visibility:	hidden;
+	
+	left: 0;
+	
+	/*
+	   Netscape/Mozilla renders borders by increasing
+	   their z-index.  The following line is necessary
+	   to cover any borders underneath
+	*/
+	z-index: 100;
+	border:	0;
+	padding: 0;
+
+	overflow: visible;
+	border: 1px solid #022D5A;
+}
+
+.ThemeOfficeSubMenuTable
+{
+	overflow: visible;
+}
+
+.ThemeOfficeMainItem,.ThemeOfficeMainItemHover,.ThemeOfficeMainItemActive,
+.ThemeOfficeMenuItem,.ThemeOfficeMenuItemHover,.ThemeOfficeMenuItemActive
+{
+	border: 0;
+	cursor: default;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.ThemeOfficeMainItem
+{
+	background-color: transparent;
+	color: #FFFFFF;
+}
+
+.ThemeOfficeMainItemHover,.ThemeOfficeMainItemActive
+{
+	background-color: #507D9E;
+	color: #FFFFFF;
+}
+
+.ThemeOfficeMenuItem
+{
+	background-color: #E1E1E1;
+	color: #273F27;
+}
+
+.ThemeOfficeMenuItemHover,.ThemeOfficeMenuItemActive
+{
+	background-color: #507D9E;
+	color: #273F27;
+}
+
+
+/* horizontal main menu */
+
+.ThemeOfficeMainItem
+{
+	background-image: url(../images/fd_base_menu_divisoria.gif);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	
+	padding: 0px;
+	padding-left: 14px;
+	padding-right: 12px;
+	border: 0px;
+}
+
+td.ThemeOfficeMainItemHover,td.ThemeOfficeMainItemActive
+{
+	background-image: url(../images/fd_base_menu_divisoria.gif);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	
+	padding: 0px;
+	padding-left: 14px;
+	padding-right: 12px;
+	border: 0px;
+}
+
+.ThemeOfficeMainFolderLeft,.ThemeOfficeMainItemLeft,
+.ThemeOfficeMainFolderText,.ThemeOfficeMainItemText,
+.ThemeOfficeMainFolderRight,.ThemeOfficeMainItemRight
+{
+	background-color: inherit;
+	font-weight: normal;
+}
+
+.ThemeOfficeMainFolderRight{
+	font-size: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* sub menu sub components */
+
+.ThemeOfficeMenuFolderLeft,.ThemeOfficeMenuItemLeft
+{
+	padding: 0px;
+	padding-top: 3px;
+	padding-bottom:	3px;
+
+	border-top:	1px solid #507D9E;
+	border-bottom: 1px solid #507D9E;
+	border-left: 1px solid #507D9E;
+
+	background-color: inherit;
+	white-space: nowrap;
+}
+
+.ThemeOfficeMenuFolderText,.ThemeOfficeMenuItemText
+{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+
+	border-top: 1px solid #507D9E;
+	border-bottom: 1px solid #507D9E;
+
+	background-color: inherit;
+	white-space: nowrap;
+	font-weight: normal;
+}
+
+.ThemeOfficeMenuFolderRight,.ThemeOfficeMenuItemRight
+{
+	padding: 0px;
+	padding-top: 3px;
+	padding-bottom:	3px;
+
+	border-top:	0px;
+	border-bottom: 0px;
+	border-right: 0px;
+
+	background-color: inherit;
+	white-space: nowrap;
+}
+
+.ThemeOfficeMenuItem .ThemeOfficeMenuFolderLeft,
+.ThemeOfficeMenuItem .ThemeOfficeMenuItemLeft
+{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 2px;
+	padding-right: 3px;
+
+	white-space: nowrap;
+
+	border: 0;
+	background-color: #507D9E;
+}
+
+.ThemeOfficeMenuItem .ThemeOfficeMenuFolderText,
+.ThemeOfficeMenuItem .ThemeOfficeMenuItemText
+{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 5px;
+	padding-right: 5px;
+
+	border: 0;
+	background-color: inherit;
+}
+
+.ThemeOfficeMenuItem .ThemeOfficeMenuFolderRight,
+.ThemeOfficeMenuItem .ThemeOfficeMenuItemRight
+{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	padding-right: 1px;
+
+	border: 0;
+	background-color: inherit;
+}
+
+/* menu splits */
+
+.ThemeOfficeMenuSplit
+{
+	margin: 2px;
+	height: 1px;
+	overflow: hidden;
+	background-color: inherit;
+	border-top: 1px solid #C4DACE;
+}
+
+/* image shadow animation */
+
+/*
+	seq1:	image for normal
+	seq2:	image for hover and active
+
+	To use, in the icon field, input the following:
+	<img class="seq1" src="normal.gif" /><img class="seq2" src="hover.gif" />
+*/
+
+.ThemeOfficeMenuItem img.seq1
+{
+	display: inline;
+}
+
+.ThemeOfficeMenuItemHover seq2,
+.ThemeOfficeMenuItemActive seq2
+{
+	display: inline;
+}
+
+.ThemeOfficeMenuItem .seq2,
+.ThemeOfficeMenuItemHover .seq1,
+.ThemeOfficeMenuItemActive .seq1
+{
+	display: none;
+}

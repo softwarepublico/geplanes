@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="MapaDeNegocio"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Landscape"
+		 pageWidth="842"
+		 pageHeight="595"
+		 columnWidth="842"
+		 columnSpacing="0"
+		 leftMargin="0"
+		 rightMargin="0"
+		 topMargin="0"
+		 bottomMargin="14"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="definicaoIndicadores" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="definicaoDeNegocio" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="DATA" isForPrompting="false" class="java.util.Date"/>
+	<parameter name="USUARIOLOGADO" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="tituloNegocio" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="tituloIndicadores" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="diretoria" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="divisao" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="setores" isForPrompting="false" class="java.lang.String"/>
+
+	<field name="listaUnidadeGerencial" class="java.util.List"/>
+
+
+		<group  name="sub1" isStartNewPage="true" >
+			<groupExpression><![CDATA[]]></groupExpression>
+			<groupHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+			</groupHeader>
+			<groupFooter>
+			<band height="7"  isSplitAllowed="true" >
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="0"
+						y="0"
+						width="835"
+						height="0"
+						key="subreport-2"/>
+					<parametersMapExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}]]></parametersMapExpression>
+					<subreportParameter  name="definicaoIndicadores">
+						<subreportParameterExpression><![CDATA[$P{definicaoIndicadores}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="definicaoDeNegocio">
+						<subreportParameterExpression><![CDATA[$P{definicaoDeNegocio}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="tituloIndicadores">
+						<subreportParameterExpression><![CDATA[$P{tituloIndicadores}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="diretoria">
+						<subreportParameterExpression><![CDATA[$P{diretoria}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="divisao">
+						<subreportParameterExpression><![CDATA[$P{divisao}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="setores">
+						<subreportParameterExpression><![CDATA[$P{setores}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listaUnidadeGerencial})]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{definicaoIndicadores}]]></subreportExpression>
+				</subreport>
+			</band>
+			</groupFooter>
+		</group>
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="12"  isSplitAllowed="true" >
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="0"
+						y="0"
+						width="835"
+						height="0"
+						key="subreport-1"/>
+					<parametersMapExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}]]></parametersMapExpression>
+					<subreportParameter  name="definicaoIndicadores">
+						<subreportParameterExpression><![CDATA[$P{definicaoIndicadores}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="definicaoDeNegocio">
+						<subreportParameterExpression><![CDATA[$P{definicaoDeNegocio}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="tituloNegocio">
+						<subreportParameterExpression><![CDATA[$P{tituloNegocio}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="diretoria">
+						<subreportParameterExpression><![CDATA[$P{diretoria}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="divisao">
+						<subreportParameterExpression><![CDATA[$P{divisao}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="setores">
+						<subreportParameterExpression><![CDATA[$P{setores}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listaUnidadeGerencial})]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{definicaoDeNegocio}]]></subreportExpression>
+				</subreport>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="12"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="29"
+						y="0"
+						width="207"
+						height="12"
+						key="textField"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["Impresso por: "+$P{USUARIOLOGADO}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="668"
+						y="0"
+						width="139"
+						height="12"
+						key="textField-1"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right">
+						<font size="9"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["página "+ $V{PAGE_NUMBER}+" de 2"]]></textFieldExpression>
+				</textField>
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

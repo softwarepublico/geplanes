@@ -1,0 +1,22 @@
+========
+Versão 3.0.3
+========
+
+1) Manutenção Evolutiva
+- Formatação dos números referentes às metas na tela de lançamento de resultados
+- Inclusão de mensagem de alerta ao tentar excluir uma unidade gerencial
+
+2) Manutenção Corretiva
+- Correção do bug que não fechava corretamente os popups de cópia, solicitação de cancelamento e solicitação de repactuação de indicador.
+- Correção do bug que não exibia o gráfico de apresentação de resultados em alguns servidores de aplicação.
+- Ajustes para uso correto dos parâmetros ao enviar email de teste sem salvar a tela de parâmetros.
+- Correção do bug que utilizava a data limite para lançamento de resultados e não a data de travamento para atualização automática dos resultados não lançados.
+- Correção do bug que impedia o funcionamento dos botões de exclusão de todos os destinatários, Cc e CCo na tela de envio de emails.
+- Correção do bug que exibia indicadores cancelados no Painel de Controle
+- Correção no layout do relatório de Tratamento de Anomalias que não estava exibindo o título corretamente
+- Correção no layout do relatório de Ações Preventivas que não estava exibindo a descrição do campo "Sugestão e/ou reclamação cliente interno e/ou externo" corretamente
+- Ordenação das não conformidades pelo índice do requisito na tela de Auditoria Interna
+- Correção do bug que não listava os usuários corretamente na tela de listagem de usuários
+
+
+

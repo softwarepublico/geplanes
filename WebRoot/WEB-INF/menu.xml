@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE menugroup PUBLIC "//LinkCom//Neo Menu 1.0//EN" "menu.dtd">
+<menugroup orientation="hbl">
+
+	<menu title=" Home" icon="/images/ico_home.gif" url="/sgm/Index"/>
+	
+	<menu title="(P) PLANEJAR">
+		<menu title="Definição do negócio" url="/sgm/process/DefinicaoNegocio" />
+		<menu title="Definição de competências" url="/sgm/process/DefinicaoCompetencia" />
+		<menu title="Cadastrar perspectivas" url="/sgm/crud/Perspectiva" />
+		<menu title="Cadastrar objetivos estratégicos" url="/sgm/crud/ObjetivoEstrategico" />
+		<menu title="Elaborar mapa estratégico" url="/sgm/process/DefinicaoEstrategia" />
+		<menu title="Matriz de iniciativas x FCS" url="/sgm/process/MatrizFCS" />		
+		<menu title="Painel de indicadores" url="/sgm/process/DistribuicaoPesosIndicadores" />
+	</menu>
+				
+	<menu title="(D) EXECUTAR">
+		<menu title="Lançamento de resultados" url="/sgm/process/LancamentoValorReal" />		
+		<menu title="Executar planos de ação" url="/sgm/process/IniciativaPlanoAcao" />		
+		<menu title="Solicitação de cancelamento de indicadores" url="/sgm/process/SolicitacaoCancelamentoIndicador" />		
+		<menu title="Solicitação de repactuação de indicadores" url="/sgm/process/SolicitacaoRepactuacaoIndicador" />
+	</menu>
+			
+	<menu title="(C) VERIFICAR">
+		<menu title="Relatórios">
+			<menu title="Painel de controle / gestão à vista" url="/sgm/process/PainelControle" />
+			<menu title="Apresentação de resultados" url="/sgm/process/ApresentacaoResultados" />
+			<menu title="Listagem de indicadores por objetivo estratégico" url="/sgm/report/IndicadoresEstrategico" />
+			<menu title="Alcance de metas institucionais" url="/sgm/report/AlcanceMetaInstitucional" />
+			<menu title="Matriz de iniciativas x FCS" url="/sgm/report/MatrizFCS" />
+			<menu title="---"/>
+			<menu title="Mapa do negócio" url="/sgm/report/MapaNegocio" />
+			<menu title="Mapa estratégico" url="/sgm/report/MapaEstrategico" />		
+			<menu title="Mapa de competências" url="/sgm/report/MapaCompetencia" />
+			<menu title="---"/>
+			<menu title="Pendência no cadastro" url="/sgm/report/PendenciaCadastro" />
+			<menu title="Pendência de cadastro de anomalia" url="/sgm/report/PendenciaAnomalia" />
+			<menu title="---"/>
+			<menu title="Anomalias" url="/sgm/report/AnomaliaListagem" />
+			<menu title="Sintético de anomalias por status" url="/sgm/report/AnomaliaSinteticoPorStatus" />
+			<menu title="Desempenho" url="/sgm/report/Desempenho" />
+			<menu title="Planos de ação das iniciativas" url="/sgm/report/IniciativaPlanoAcao" />
+		</menu>
+		<menu title="Auditoria de gestão">			
+			<menu title="Modelo de auditoria" url="/sgm/crud/ModeloAuditoriaGestao" />			
+			<menu title="Realizar auditoria" url="/sgm/crud/AuditoriaGestao" />
+		</menu>
+		<menu title="Auditoria interna">
+			<menu title="Normas" url="/sgm/crud/Norma" />			
+			<menu title="Realizar auditoria" url="/sgm/crud/AuditoriaInterna" />
+		</menu>		
+	</menu>
+	
+	<menu title="(A) AGIR">
+		<menu title="Diário de bordo" url="/sgm/crud/Ocorrencia" />
+		<menu title="Ações preventivas" url="/sgm/crud/AcaoPreventiva" />
+		<menu title="Tratamento de anomalias" url="/sgm/crud/Anomalia" />
+	</menu>
+
+	<menu title="Sistema">
+		<menu title="Acesso">
+			<menu title="Nível de acesso" url="/sgm/crud/Papel" />
+			<menu title="Usuários" url="/sgm/crud/Usuario" />
+			<menu title="Alterar senha" url="/sgm/process/AlterarSenha" />	
+		</menu>
+		<menu title="Ano da gestão" url="/sgm/crud/PlanoGestao" />
+		<menu title="Níveis hierárquicos" url="/sgm/crud/NivelHierarquico" />					
+		<menu title="Unidades gerenciais" url="/sgm/crud/UnidadeGerencial" />					
+		<menu title="Competência organizacional" url="/sgm/crud/CompetenciaOrganizacional" />		
+		<menu title="Sistema de pontuação" url="/sgm/crud/FatorAvaliacao" />				
+		<menu title="Unidades de medida" url="/sgm/crud/UnidadeMedida" />		
+		<menu title="Envio de e-mail" url="/sgm/process/EnvioEmail" />
+		<menu title="Histórico de e-mail enviado" url="/sgm/crud/EmailHistorico" />
+		<menu title="Mensagens" url="/sgm/crud/Mensagem" />
+		<menu title="Parâmetros" url="/sgm/crud/ParametrosSistema" />
+		<menu title="Processos de notificação / atualização" url="/sgm/process/LogProcesso" />	
+		<menu title="Sobre a LinkCom" url="/sgm/process/SobreLinkCom" />	
+		<menu title="Sobre o Geplanes" url="/sgm/process/SobreGeplanes" />	
+	</menu>
+	
+	<menu title="Sair" url="/logout.jsp" />
+</menugroup>

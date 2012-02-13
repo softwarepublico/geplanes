@@ -1,0 +1,78 @@
+/* MENSAGENS DE INFO, ALERTA E ERRO */
+
+.messageblock{
+	width:98%;
+	border: 1px solid #666666;
+	background-color: #fff3e3;
+	padding:1px;
+	margin-bottom:5px;
+}
+
+.messageblock ul{
+	margin: 10px;
+	margin-left: 0px;
+	text-align: left;
+}
+
+.info
+{
+	font-family: Verdana;
+	font-size: 12px;
+	color: #118811;	
+	font-weight: bold;
+}
+
+.warn
+{
+	font-family: Verdana;
+	font-size: 12px;
+	color: #BB5500;
+	font-weight: bold;	
+}
+
+.error
+{
+	font-family: Verdana;
+	font-size: 12px;
+	color: #CC0000;
+	font-weight: bold;
+}
+
+.exceptionitem
+{
+	font-family: Verdana;
+	font-size: 12px;
+	color: #CC0000;
+	font-weight: bold;
+}
+
+.bindblock {
+	width:98%;
+	border: 1px solid #666666;
+	background-color: #fff3e3;
+	padding:1px;
+	margin-bottom:5px;
+	text-align: left;
+}
+
+.bindblock ul{
+	margin: 10px;
+	margin-left: 0px;
+	text-align: left;	
+}
+
+.globalerror
+{
+	font-family: Verdana;
+	font-size: 12px;	
+	color: #CC0000;
+	font-weight: bold;
+}
+
+.messagetitle
+{
+	font-family: Verdana;
+	font-size: 12px;	
+	color: #333333;
+	font-weight: bold;
+}	

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Geplanes_BSC"
+  id="myeclipse.1167842654666"
+  context-root="/geplanes_bsc"
+  j2ee-spec="1.4"
+  archive="Geplanes_BSC.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+
